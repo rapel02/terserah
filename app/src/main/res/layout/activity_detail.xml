@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="25sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#eeeeee"/>
+
+            <TextView
+                android:id="@+id/detail_location"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_name"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="center"
+                android:textSize="12.5sp"
+                android:textColor="#eeeeee"/>
+
+            <!-- Tags -->
+
+            <TextView
+                android:id="@+id/tag_categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/detail_location"
+                android:paddingTop="@dimen/detail_tag_padding"
+                android:paddingBottom="@dimen/detail_tag_padding"
+                android:layout_below="@id/detail_location"
+                android:textSize="15dp"
+                android:text="Categories"
+                android:textColor="#eeeeee"/>
+
+            <TextView
+                android:id="@+id/tag_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/detail_location"
+                android:paddingTop="@dimen/detail_tag_padding"
+                android:paddingBottom="@dimen/detail_tag_padding"
+                android:layout_alignTop="@id/detail_hours"
+                android:layout_marginRight="30dp"
+                android:textSize="15dp"
+                android:text="Opening Hours"
+                android:textColor="#eeeeee"/>
+
+            <TextView
+                android:id="@+id/tag_prices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/detail_location"
+                android:paddingTop="@dimen/detail_tag_padding"
+                android:paddingBottom="@dimen/detail_tag_padding"
+                android:layout_alignTop="@id/detail_prices"
+                android:textSize="15dp"
+                android:text="Price"
+                android:textColor="#eeeeee"/>
+
+            <TextView
+                android:id="@+id/tag_ratings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/detail_location"
+                android:paddingTop="@dimen/detail_tag_padding"
+                android:paddingBottom="@dimen/detail_tag_padding"
+                android:layout_alignTop="@id/detail_ratings"
+                android:textSize="15dp"
+                android:text="Rating"
+                android:textColor="#eeeeee"/>
+
+            <TextView
+                android:id="@+id/tag_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/detail_location"
+                android:paddingTop="@dimen/detail_tag_padding"
+                android:paddingBottom="@dimen/detail_tag_padding"
+                android:layout_alignTop="@id/detail_contacts"
+                android:textSize="15dp"
+                android:text="Contact"
+                android:textColor="#eeeeee"/>
+
+            <TextView
+                android:id="@+id/tag_descriptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/detail_location"
+                android:paddingTop="@dimen/detail_tag_padding"
+                android:paddingBottom="@dimen/detail_tag_padding"
+                android:layout_alignTop="@id/detail_descriptions"
+                android:textSize="15dp"
+                android:text="Description"
+                android:textColor="#eeeeee"/>
+            <!--&lt;!&ndash;/Tags&ndash;&gt;-->
+
+            <!--&lt;!&ndash;Values&ndash;&gt;-->
+
+            <TextView
+                android:id="@+id/detail_categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_location"
+                android:layout_toRightOf="@id/tag_hours"
+                android:layout_alignRight="@id/detail_location"
+                android:paddingTop="@dimen/detail_tag_padding"
+                android:paddingBottom="@dimen/detail_tag_padding"
+                android:textColor="#eeeeee"/>
+
+            <TextView
+                android:id="@+id/detail_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/detail_tag_padding"
+                android:paddingBottom="@dimen/detail_tag_padding"
+                android:layout_alignLeft="@id/detail_categories"
+                android:layout_alignRight="@id/detail_location"
+                android:layout_below="@id/detail_categories"
+                android:textColor="#eeeeee"/>
+
+            <TextView
+                android:id="@+id/detail_prices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/detail_tag_padding"
+                android:paddingBottom="@dimen/detail_tag_padding"
+                android:layout_alignLeft="@id/detail_categories"
+                android:layout_alignRight="@id/detail_location"
+                android:layout_below="@id/detail_hours"
+                android:textColor="#eeeeee"/>
+
+            <TextView
+                android:id="@+id/detail_ratings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/detail_tag_padding"
+                android:paddingBottom="@dimen/detail_tag_padding"
+                android:layout_alignLeft="@id/detail_categories"
+                android:layout_alignRight="@id/detail_location"
+                android:layout_below="@id/detail_prices"
+                android:textColor="#eeeeee"/>
+
+            <TextView
+                android:id="@+id/detail_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/detail_tag_padding"
+                android:paddingBottom="@dimen/detail_tag_padding"
+                android:layout_alignLeft="@id/detail_categories"
+                android:layout_alignRight="@id/detail_location"
+                android:layout_below="@id/detail_ratings"
+                android:textColor="#eeeeee"/>
+
+            <TextView
+                android:id="@+id/detail_descriptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/detail_tag_padding"
+                android:paddingBottom="@dimen/detail_tag_padding"
+                android:layout_alignLeft="@id/detail_categories"
+                android:layout_alignRight="@id/detail_location"
+                android:layout_below="@id/detail_contacts"
+                android:textColor="#eeeeee"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered By FOURSQUARE"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#eeeeee"/>
+    </RelativeLayout>
+</RelativeLayout>

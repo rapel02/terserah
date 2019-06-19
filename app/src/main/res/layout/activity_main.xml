@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/dummy_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Your Location: "
+            android:textColor="#eeeeee"/>
+
+        <TextView
+            android:id="@+id/user_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dummy_text_1"
+            android:paddingLeft="5dp"
+            android:textSize="15sp"
+            android:text="Fetching..."
+            android:textColor="#eeeeee"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tv_nama_restoran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="#eeeeee"/>
+
+        <TextView
+            android:id="@+id/tv_lokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_nama_restoran"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textColor="#eeeeee"/>
+
+        <Button
+            android:id="@+id/btn_terserah"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_lokasi"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="10dp"
+
+            android:text="TERSERAH"
+            android:onClick="terserah" />
+
+        <Button
+            android:id="@+id/btn_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btn_terserah"
+            android:layout_alignLeft="@id/btn_terserah"
+            android:layout_alignRight="@id/btn_terserah"
+            android:visibility="invisible"
+
+            android:text="Detail"
+            android:onClick="detailMenu" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered By FOURSQUARE"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#eeeeee"/>
+    </RelativeLayout>
+</RelativeLayout>

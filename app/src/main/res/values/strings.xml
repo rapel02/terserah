@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Terserah</string>
+    <string name="foursquare_client_id">
+        3YJRTIWANZLXIIXICAINO4USQUP2DTH52LUOO3SSWKISQQ2O
+    </string>
+    <string name="foursquare_client_secret">
+        B5VGNDKMVXJ3WD4YQJMUCNPJUKH2JT1V0H3BKWAHO3VT03CX
+    </string>
+</resources>
